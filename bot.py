@@ -13,6 +13,11 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 bot = commands.Bot(command_prefix='!')
 
+# creating bot command to reply hello
+@bot.command(name='hello', help='Responds with hi')
+async def hello(ctx):
+    await ctx.send("hi")
+
 # creating bot command for google search
 @bot.command(name='google', help='Responds with top 5 links from google search')
 async def google_search(ctx, keyword):
