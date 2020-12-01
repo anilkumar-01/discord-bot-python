@@ -1,0 +1,5 @@
+.env
+venv/
+bluestacksenv/
+__pycache__/
+.google-cookie
